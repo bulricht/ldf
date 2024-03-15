@@ -1,0 +1,73 @@
+@base <https://brakke.net/> .
+@prefix github: <https://brakke-net.github.io/#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix og: <http://ogp.me/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <http://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<> a schema:WebPage;
+    og:description "data scientist with an aptitude for oceanographic and meteorological data"@en;
+    og:image "https://avatars.githubusercontent.com/u/108867473"@en;
+    og:title "brakke.net"@en;
+    og:type "website"@en;
+    og:url "https://brakke.net/"@en;
+    .
+
+<#nil> a foaf:Person;
+    foaf:account <https://mastodon.social/@brakke>;
+    foaf:age "0"^^xsd:integer;
+    foaf:based_near wd:Q1296;
+    foaf:depiction <https://avatars.githubusercontent.com/u/108867473>;
+    foaf:gender "male";
+    foaf:homepage <>;
+    foaf:mbox <mailto:nil@brakke.net>;
+    foaf:name "Bram Ulrichts";
+    foaf:nick "brakke";
+    foaf:workplaceHomepage <https://vliz.be>;
+    foaf:knows
+        <https://users.ugent.be/~jcunhame/#me>,
+        _:b0,
+        <https://pietercolpaert.be/#me>,
+        <https://colada.be/#me>,
+        <https://razoreater.github.io/iam/#me>,
+        <https://jensdesutter.github.io/#me>,
+        <https://nicovervaeck.github.io/#me>,
+        <https://stijnoosterlinck.github.io/#me>,
+        <https://users.ugent.be/~alatinis/#me>,
+        <https://nics.github.io/#me>,
+        <https://users.ugent.be/~odlmarce/rdf#me>,
+        <https://wodsaegh.github.io/>,
+        <https://liadsmed.github.io/#me>,
+        <https://pietervdvn.github.io/me.jsonld>;
+    owl:sameAs
+        <#00000000-0000-0000-0000-000000000000>,
+        github:00000000-0000-0000-0000-000000000000,
+        github:nil,
+        <https://orcid.org/0000-0002-5934-8998>,
+        <https://marineinfo.org/imis?module=person&persid=41905>;
+    schema:colleague <https://users.ugent.be/~jcunhame/#me>;
+    schema:jobTitle "Open Science Engineer";
+    .
+
+<#00000000-0000-0000-0000-000000000000> owl:sameAs <#nil> .
+
+github:00000000-0000-0000-0000-000000000000 owl:sameAs <#nil> .
+
+github:nil owl:sameAs <#nil> .
+
+<https://users.ugent.be/~jcunhame/#me> a foaf:Person;
+    foaf:firstName "Jorge";
+    .
+
+_:b0 a foaf:Person;
+    foaf:firstName "Pieter";
+    .
+
+<https://pietercolpaert.be/teaching/kg/#2023-2024> a schema:CourseInstance;
+    schema:attendee
+        <#nil>,
+        <https://users.ugent.be/~jcunhame/#me>,
+        _:b0;
+    .
